@@ -73,7 +73,7 @@ discord_client.on("message", message => {
     }
 });
 // Authenticate.
-discord_client.login(NjM3MzE3OTA5MTk4Mjc0NTcw.XbMeYw.Lwxt0f_TKsHeRSaoVK11yfcje94).catch(error => console.error(`Error during discord authentication: ${error}`));
+discord_client.login(config.discord_bot_token).catch(error => console.error(`Error during discord authentication: ${error}`));
 
 // Run this on an interval to update discord channels with new data from legacyplayers.
 var update_raids = () => {
